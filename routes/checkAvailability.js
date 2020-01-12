@@ -17,7 +17,7 @@ router.post('/', (req, res) => {
     });
   } else {
     const query = `SELECT room_number FROM room_status WHERE (booking_start_date IS NULL || (booking_start_date > "${startDate}" 
-            && booking_start_date > "${endDate}") || (booking_end_date < "${startDate}" && booking_end_date < "${endDate}"))`;
+      && booking_start_date > "${endDate}") || (booking_end_date < "${startDate}" && booking_end_date < "${endDate}"))`;
 
     console.log(query);
     pool.query(query, (err, rows) => {
@@ -31,11 +31,6 @@ router.post('/', (req, res) => {
         console.log('The solution is: ', JSON.stringify(rows));
 
         const rooms = JSON.parse(JSON.stringify(rows));
-
-        // for (const room of rooms) {
-        //   // push(room.room_number);
-        //   availableRooms.push(room.room_number);
-        // }
 
         rooms.forEach((room) => {
           availableRooms.push(room.room_number);
