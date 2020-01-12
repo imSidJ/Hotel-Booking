@@ -12,3 +12,9 @@ Request Body Prameters-
 | ------------- | ------------- |
 | startDate  | Booking start date in yyyy-mm-dd format |
 | endDate  | Booking end date in yyyy-mm-dd format  |
+
+Response Body Prameters -
+
+ Parameter  | Description |
+| ------------- | ------------- |
+| availabel_rooms  | Array of available room number |
