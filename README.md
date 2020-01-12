@@ -40,6 +40,7 @@ Response -
 ```
 
 
+
 ## Room Booking API
 
 Endpoint - /hotel/room/booking
@@ -72,6 +73,6 @@ Response -
 
 {
   "error":false,
-  "message":"Room booked successfull"
+  "message":"Room booked successfully"
 }
 ```
