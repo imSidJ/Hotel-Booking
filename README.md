@@ -73,6 +73,6 @@ Response -
 
 {
   "error":false,
-  "message":"Room booked successfully"
+  "message":"Room 4 booked successfully for Siddharth Jadhav"
 }
 ```
