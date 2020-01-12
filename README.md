@@ -15,6 +15,24 @@ Request Body Prameters-
 
 Response Body Prameters -
 
- Parameter  | Description |
+| Parameter  | Description |
 | ------------- | ------------- |
-| availabel_rooms  | Array of available room number |
+| available_rooms  | Array of available room numbers |
+
+Example :
+
+Request -
+```
+
+{
+  "startDate": "2020-01-20",
+  "endDate": "2020-01-25"
+}
+```
+
+Response -
+```
+
+{
+  "available_rooms": "[1, 2, 6, 9]"
+}
