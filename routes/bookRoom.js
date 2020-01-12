@@ -23,7 +23,7 @@ router.post('/', (req, res) => {
 
     pool.query(query, (err) => {
       if (err) {
-        console.log(err);
+        // console.log(err);
         res.json({
           error: true,
           message: `Error occurred ${err}`,
