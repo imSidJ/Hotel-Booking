@@ -31,7 +31,7 @@ router.post('/', (req, res) => {
       } else {
         res.json({
           error: false,
-          message: 'Room booked successfull',
+          message: 'Room booked successfully',
         });
       }
     });
